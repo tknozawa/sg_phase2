@@ -14,6 +14,19 @@ head(caseDS)
 
 ```
 
+```{r}
+remove.packages("rstan")
+if(file.exists(".RData")) file.remove(".RData")
+```
+
+```{r}
+install.packages('rstan', repos='https://cloud.r-project.org/', dependencies=TRUE)
+```
+
+```{r}
+pkgbuild::has_build_tools(debug = TRUE)
+
+```
 
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
